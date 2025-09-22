@@ -20,6 +20,28 @@
 
 A comprehensive iOS weather application that demonstrates modern Swift development practices, featuring real-time weather data, interactive maps, intelligent caching. Built with SwiftUI, async/await concurrency, protocol-based architecture, and comprehensive testing.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/Cape%20Town.png" alt="Cape Town Weather" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/map.png" alt="Map Screen" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/favorites.png" alt="Favorites Screen" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/settings.png" alt="Settings Screen" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/search.png" alt="Search Screen" width="320" />
+
+</p>
+
+## 🎥 Demo
+
+- [Watch the MP4 demo](https://github.com/Takudzwa96/Weather-App/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2016%20Pro%20-%202025-09-22%20at%2011.16.29.mp4)
+
+<p align="center">
+  <video controls width="360">
+    <source src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/Simulator%20Screen%20Recording%20-%20iPhone%2016%20Pro%20-%202025-09-22%20at%2011.16.29.mp4" type="video/mp4">
+  </video>
+</p>
+
 ## 🌟 Features
 
 ### 🌡️ **Core Weather Intelligence**
@@ -417,6 +439,15 @@ xcrun simctl erase all
 # Update dependencies
 xcodebuild -resolvePackageDependencies
 ```
+https://github.com/Takudzwa96/Weather-App/blob/main/Cape%20Town.png
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/Cape.png" alt="London Weather" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
+  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
+</p>
 
 ## 👨‍💻 Author
 
