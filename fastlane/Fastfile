@@ -1,0 +1,82 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run tests"
+  lane :test do
+    run_tests(
+      project: "Weather App.xcodeproj",
+      scheme: "Weather App",
+      devices: ["iPhone 15"],
+      code_coverage: true,
+      xcargs: "CODE_SIGN_IDENTITY='' CODE_SIGNING_REQUIRED=NO"
+    )
+  end
+
+  desc "Build for App Store"
+  lane :build do
+    build_app(
+      project: "Weather App.xcodeproj",
+      scheme: "Weather App",
+      export_method: "app-store",
+      configuration: "Release",
+      clean: true,
+      output_directory: "./build",
+      output_name: "WeatherApp.ipa"
+    )
+  end
+
+  desc "Deploy to TestFlight"
+  lane :beta do
+    ensure_git_status_clean
+    increment_build_number
+    build
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+    commit_version_bump
+    push_to_git_remote
+  end
+
+  desc "Deploy to App Store"
+  lane :release do
+    ensure_git_status_clean
+    increment_version_number(
+      bump_type: "patch"
+    )
+    increment_build_number
+    build
+    upload_to_app_store(
+      force: true,
+      submit_for_review: false,
+      skip_screenshots: true,
+      skip_metadata: false
+    )
+    commit_version_bump
+    add_git_tag
+    push_to_git_remote
+  end
+
+  desc "Create screenshots"
+  lane :screenshots do
+    capture_screenshots(
+      project: "Weather App.xcodeproj",
+      scheme: "Weather AppUITests"
+    )
+  end
+
+  desc "Run security scan"
+  lane :security do
+    swiftlint(
+      mode: :lint,
+      strict: true,
+      config_file: ".swiftlint.yml"
+    )
+  end
+
+  error do |lane, exception|
+    notification(
+      title: "Fastlane Error",
+      message: "Lane #{lane} failed: #{exception.message}"
+    )
+  end
+end
