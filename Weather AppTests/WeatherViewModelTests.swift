@@ -33,7 +33,7 @@ final class WeatherViewModelTests: XCTestCase {
             let hour = (i % 2) * 12
             let date = calendar.date(byAdding: .day, value: day, to: now)!
             let dt = date.addingTimeInterval(Double(hour) * 3600).timeIntervalSince1970
-            return ForecastItem(dt: dt, main: MainWeather(temp: Double(20 + day), temp_min: nil, temp_max: nil), weather: [WeatherCondition(main: "Clouds", description: "cloudy")])
+            return ForecastItem(dt: dt, main: MainWeather(temp: Double(20 + day), temp_min: nil, temp_max: nil), weather: [WeatherCondition(main: "Clouds", description: "cloudy")], pop: Double.random(in: 0...1))
         }
         viewModel.forecast = forecast
 

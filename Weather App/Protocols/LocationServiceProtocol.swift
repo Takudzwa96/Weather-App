@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import Combine
 
-/// Protocol defining the interface for location services
+// Protocol defining the interface for location services
 protocol LocationServiceProtocol: ObservableObject {
     /// Current location coordinates
     var location: CLLocationCoordinate2D? { get }

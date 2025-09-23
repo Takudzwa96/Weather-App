@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Secure configuration management for the app
+// Secure configuration management for the app
 /// This structure provides a secure way to manage API keys and configuration
 struct AppConfiguration {
     enum ConfigurationError: LocalizedError {

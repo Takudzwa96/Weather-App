@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-/// AppStorageService provides a SwiftUI-friendly storage solution using @AppStorage for simple values
+// AppStorageService provides a SwiftUI-friendly storage solution using @AppStorage for simple values
 /// and UserDefaults for complex data with automatic UI updates
 @MainActor
 class AppStorageService: ObservableObject {
@@ -109,11 +109,6 @@ class AppStorageService: ObservableObject {
         let expirationDate = Date().addingTimeInterval(-cacheExpirationHours * 3600)
         return cached.lastUpdated > expirationDate
     }
-    
-    // MARK: - Data Migration (for future updates)
-    func migrateFromOldStorage() {
-        // This can be used to migrate data from old UserDefaults keys
-        // when updating the app structure
-    }
+
 }
 
