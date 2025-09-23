@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// SettingsView demonstrates @AppStorage usage for app preferences
+/// SettingsView demonstrates @AppStorage usage for app preferences
 @available(iOS 14.0, *)
 struct SettingsView: View {
     @AppStorage("temperatureUnit") private var temperatureUnit: String = "celsius"

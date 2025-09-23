@@ -11,6 +11,8 @@ import UIKit
 @main
 struct Weather_AppApp: App {
     @State private var showSplash = true
+    @StateObject private var diContainer = DIContainer.shared
+
 
     init() {
         setupGlobalAppearance()
@@ -22,8 +24,10 @@ struct Weather_AppApp: App {
                 SplashScreenView {
                     showSplash = false
                 }
+                .environment(\.diContainer, diContainer)
             } else {
                 HomeView()
+                    .environment(\.diContainer, diContainer)
             }
         }
     }

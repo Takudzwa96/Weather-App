@@ -439,15 +439,6 @@ xcrun simctl erase all
 # Update dependencies
 xcodebuild -resolvePackageDependencies
 ```
-https://github.com/Takudzwa96/Weather-App/blob/main/Cape%20Town.png
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
-  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/Cape.png" alt="London Weather" width="320" />
-  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
-  <img src="https://raw.githubusercontent.com/Takudzwa96/Weather-App/main/London.png" alt="London Weather" width="320" />
-</p>
 
 ## 👨‍💻 Author
 

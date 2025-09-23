@@ -30,36 +30,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		08D578892E7D97D600A809C8 /* Exceptions for "Weather App" folder in "Weather App" target */ = {
+		08D579632E82695D00A809C8 /* Exceptions for "Weather App" folder in "Weather App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 085776AF2E153FC4004FA176 /* Weather App */;
-		};
-		08D5788B2E7D9A1600A809C8 /* Exceptions for "Weather App" folder in "Weather AppTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Configuration/AppConfiguration.swift,
-				Models/CachedWeather.swift,
-				Models/FavouriteLocation.swift,
-				Models/Weather.swift,
-				Protocols/LocationServiceProtocol.swift,
-				Protocols/PlacesServiceProtocol.swift,
-				Protocols/StorageProtocols.swift,
-				Protocols/WeatherServiceProtocol.swift,
-				Repositories/LocationRepository.swift,
-				Repositories/WeatherRepository.swift,
-				Services/AppStorageService.swift,
-				Services/FavouritesService.swift,
-				Services/LocationService.swift,
-				Services/PlacesService.swift,
-				Services/WeatherCacheService.swift,
-				Services/WeatherService.swift,
-				ViewModels/FavouritesViewModel.swift,
-				ViewModels/WeatherViewModel.swift,
-			);
-			target = 085776BF2E153FC7004FA176 /* Weather AppTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -67,8 +43,7 @@
 		085776B22E153FC4004FA176 /* Weather App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				08D578892E7D97D600A809C8 /* Exceptions for "Weather App" folder in "Weather App" target */,
-				08D5788B2E7D9A1600A809C8 /* Exceptions for "Weather App" folder in "Weather AppTests" target */,
+				08D579632E82695D00A809C8 /* Exceptions for "Weather App" folder in "Weather App" target */,
 			);
 			path = "Weather App";
 			sourceTree = "<group>";

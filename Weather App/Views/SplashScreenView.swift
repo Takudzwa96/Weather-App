@@ -2,9 +2,9 @@ import SwiftUI
 
 /// SplashScreenView displays an animated splash screen when the app launches.
 struct SplashScreenView: View {
-    @State private var animate = false
-    var onFinish: (() -> Void)?
-    @State private var gradientAngle: Double = 0 
+    @State private var animate = false   // Controls the animation state
+    var onFinish: (() -> Void)?          // Callback when the splash screen finishes
+    @State private var gradientAngle: Double = 0 // For animated gradient
     
     var body: some View {
         ZStack {

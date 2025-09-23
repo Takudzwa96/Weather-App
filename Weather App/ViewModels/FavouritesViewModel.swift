@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-// FavouritesViewModel manages the list of favourite locations using AppStorageService for reactive UI updates.
+/// FavouritesViewModel manages the list of favourite locations using AppStorageService for reactive UI updates.
 @MainActor
 class FavouritesViewModel: ObservableObject {
     @Published var favourites: [FavouriteLocation] = []   // List of favourite locations
@@ -45,5 +45,8 @@ class FavouritesViewModel: ObservableObject {
     func isFavourite(_ location: FavouriteLocation) -> Bool {
         return favourites.contains(location)
     }
-
+    
+    func reverseString(_ str: String) -> String {
+        return String (str.reversed())
+    }
 }

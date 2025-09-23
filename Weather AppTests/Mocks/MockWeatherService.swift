@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-// Mock implementation of WeatherServiceProtocol for testing
+/// Mock implementation of WeatherServiceProtocol for testing
 class MockWeatherService: WeatherServiceProtocol {
     
     // MARK: - Test Configuration
